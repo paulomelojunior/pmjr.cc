@@ -112,21 +112,21 @@ export class MenuContainer extends ThemeMixin(LitElement) {
                 <mobile-item
                   href="/last-project"
                   label="Last project"
-                  index="twyne.io"
+                  index="001"
                 ></mobile-item>
               </li>
               <li>
                 <mobile-item
                   href="/"
                   label="GitHub"
-                  index="@paulomelojunior"
+                  index="002"
                 ></mobile-item>
               </li>
               <li>
                 <mobile-item
                   href="/"
                   label="LinkedIn"
-                  index="@paulomelojunior"
+                  index="003"
                 ></mobile-item>
               </li>
               <li>

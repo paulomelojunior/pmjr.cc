@@ -102,7 +102,7 @@ export class TwyneMenu extends ThemeMixin(LitElement) {
   render() {
     return html`
       <header
-        class="absolute inset-x-0 z-40 hidden w-full bg-linear-to-b from-zinc-950 backdrop-blur to-zinc-950/80 backdrop-saturate-200 xl:fixed xl:block py-2"
+        class="fixed inset-x-0 z-40 w-full bg-linear-to-b from-zinc-950 backdrop-blur to-zinc-950/80 backdrop-saturate-200 xl:fixed xl:block py-2"
       >
         <div class="container xl:grid flex items-center xl:grid-cols-3">
           <nav class="xl:hidden">
@@ -116,21 +116,21 @@ export class TwyneMenu extends ThemeMixin(LitElement) {
                 <mobile-item
                   href="/"
                   label="Home"
-                  index="pmjr.cc"
+                  index="001"
                 ></mobile-item>
               </li>
               <li>
                 <mobile-item
                   href="/"
                   label="GitHub"
-                  index="@paulomelojunior"
+                  index="002"
                 ></mobile-item>
               </li>
               <li>
                 <mobile-item
                   href="/"
                   label="LinkedIn"
-                  index="@paulomelojunior"
+                  index="003"
                 ></mobile-item>
               </li>
               <li>

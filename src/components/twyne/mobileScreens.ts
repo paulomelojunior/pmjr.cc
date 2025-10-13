@@ -15,7 +15,7 @@ export class Mobilecreens extends LitElement {
   @property({ type: Number }) currentIndex: number = 0
   @property({ type: Array }) screens: NodeListOf<HTMLImageElement> =
     [] as unknown as NodeListOf<HTMLImageElement>
-  @property({ type: Function }) updateScreens: () => void = () => {}
+  @property({ type: Function }) updateMobScreens: () => void = () => {}
 
   connectedCallback() {
     super.connectedCallback()
@@ -32,14 +32,14 @@ export class Mobilecreens extends LitElement {
   }
 
   protected firstUpdated(_changedProperties: PropertyValues): void {
-    const screens = document.querySelectorAll('.carrossel img')
+    const screens = document.querySelectorAll('.mob-carrossel img')
     // Definindo o índice atual da imagem
     this.currentIndex = 0
     // Faz o cast do NodeList para NodeListOf<HTMLImageElement> de forma segura
     this.screens = screens as NodeListOf<HTMLImageElement>
 
     // Função para atualizar a exibição das imagens
-    this.updateScreens = () => {
+    this.updateMobScreens = () => {
       this.screens.forEach((img, idx) => {
         if (idx === this.currentIndex) {
           gsap.to(img, {
@@ -61,7 +61,7 @@ export class Mobilecreens extends LitElement {
     }
 
     // Inicializa a exibição correta
-    this.updateScreens()
+    this.updateMobScreens()
 
     // Seleciona os botões Prev e Next
     const prevBtn = this.renderRoot.querySelector('button:first-of-type')
@@ -72,12 +72,12 @@ export class Mobilecreens extends LitElement {
       prevBtn.addEventListener('click', () => {
         this.currentIndex =
           (this.currentIndex - 1 + this.screens.length) % this.screens.length
-        this.updateScreens()
+        this.updateMobScreens()
       })
 
       nextBtn.addEventListener('click', () => {
         this.currentIndex = (this.currentIndex + 1) % this.screens.length
-        this.updateScreens()
+        this.updateMobScreens()
       })
     }
   }
@@ -91,7 +91,7 @@ export class Mobilecreens extends LitElement {
           >
             ${unsafeHTML(i18next.t('twyne.mobile.t1'))}
           </h2>
-          <div class="carrossel relative overflow-hidden">
+          <div class="mob-carrossel relative overflow-hidden">
             <img
               src="${e1}"
               class="relative mobile-screen"

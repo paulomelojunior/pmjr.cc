@@ -57,10 +57,6 @@ export class FooterSection extends LitElement {
     if (!navList) return
 
     const navItems = {
-      email: {
-        label: 'Email',
-        url: 'mailto:hello@pmjr.cc',
-      },
       github: {
         label: 'GitHub',
         url: 'https://github.com/paulomelojunior',
@@ -68,6 +64,10 @@ export class FooterSection extends LitElement {
       linkedin: {
         label: 'LinkedIn',
         url: 'https://linkedin.com/in/paulomelojunior/',
+      },
+      email: {
+        label: 'Email',
+        url: 'mailto:hello@pmjr.cc',
       },
     }
 
