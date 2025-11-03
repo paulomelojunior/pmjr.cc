@@ -72,7 +72,7 @@
     "t2": "Twyne",
     "about": {
       "t1": "about",
-      "p1": "Developed by Ifficient, <span class='dark:text-zinc-100'>Twyne is a robust software for lead management, optimization, and distribution, focused on monetization and real-time analytics.</span>",
+      "p1": "Developed by Ifficient, <span class='text-zinc-100'>Twyne is a robust software for lead management, optimization, and distribution, focused on monetization and real-time analytics.</span>",
       "p2": "Targeted at the B2B market, it serves a few clients in volume, but with high ticket value and demanding customization.",
       "details": {
         "company": "Company",

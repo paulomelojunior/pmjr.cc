@@ -149,7 +149,7 @@ export class JourneySection extends ThemeMixin(LitElement) {
         <span class="font-mono text-[.75rem] leading-none font-medium tracking-[.05em] text-zinc-500 mb-2">
           ${item.start} &bull; <span${customClass}>${item.end}</span>
         </span>
-        <h2 class="text-[1.5rem] 2xl:text-[2rem] xl:leading-none dark:text-zinc-100 text-brand-900">
+        <h2 class="text-[1.5rem] 2xl:text-[2rem] xl:leading-none text-zinc-100">
           ${item.title}
         </h2>
         <p class="text-sm/loose 2xl:text-base/loose text-pretty">

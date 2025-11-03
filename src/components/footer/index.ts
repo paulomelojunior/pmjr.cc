@@ -76,10 +76,10 @@ export class FooterSection extends LitElement {
     navValues.forEach((e, i) => {
       const indexStr = (i + 1).toString().padStart(2, '0')
       const navItem = `
-				<div class="border-b border-brand-300 dark:border-zinc-800 xl:border-0">
-					<a target="_blank" class="menu-item h-20 xl:h-16 px-5 pt-1 flex items-center text-brand-900 dark:text-zinc-100 relative" rel="noopener noreferrer" href="${e.url}">
+				<div class="border-b border-zinc-800 xl:border-0">
+					<a target="_blank" class="menu-item h-20 xl:h-16 px-5 pt-1 flex items-center text-zinc-100 relative" rel="noopener noreferrer" href="${e.url}">
 						${e.label}
-						<div class="absolute flex items-center px-5 pt-1 inset-0 xl:rounded-full text-brand-200 dark:text-zinc-950">
+						<div class="absolute flex items-center px-5 pt-1 inset-0 xl:rounded-full text-zinc-950">
 							${e.label}
 						</div>
 						<span class="xl:hidden absolute opacity-50 right-6 bottom-6 font-mono text-[.75rem] tracking-[0.05em]">
@@ -108,7 +108,7 @@ export class FooterSection extends LitElement {
             class="flex flex-1 flex-col flex-wrap gap-0 text-[2rem] tracking-[-0.04em] xl:flex-row xl:items-baseline xl:justify-center xl:gap-4 2xl:text-[2.5rem]"
           >
             <span
-              class="flex h-20 items-center px-5 text-brand-600 xl:p-0 dark:text-zinc-600 me-5"
+              class="flex h-20 items-center px-5 xl:p-0 text-zinc-600 me-5"
             >
               ${i18next.t('connect.title')}
             </span>

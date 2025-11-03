@@ -81,7 +81,7 @@ export class TwyneProposal extends LitElement {
 
     return html`
       <ul
-        class="text-default leading-loose 2xl:text-[1.25rem] dark:text-zinc-100"
+        class="text-default leading-loose 2xl:text-[1.25rem] text-zinc-100"
       >
         ${proposalList.map(
           (item) => html`

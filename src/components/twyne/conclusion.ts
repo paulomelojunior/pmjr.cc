@@ -87,7 +87,7 @@ export class TwyneConclusion extends LitElement {
   private renderContent(): unknown {
     return html`
       <h2
-        class="mb-4 mt-16 font-semibold uppercase leading-none tracking-[0.05em] text-[0.75rem] dark:text-zinc-500"
+        class="mb-4 mt-16 font-semibold uppercase leading-none tracking-[0.05em] text-[0.75rem] text-zinc-500"
       >
         ${i18next.t('twyne.conclusion.t1')}
       </h2>
