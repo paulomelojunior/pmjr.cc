@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pmjr.cc/sitemap.xml
+Sitemap: https://paulomelojunior.com/sitemap.xml
